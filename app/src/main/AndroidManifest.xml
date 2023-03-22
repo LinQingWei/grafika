@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright 2013 Google Inc. All rights reserved.
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.grafika"
+    package="com.google.grafika"
     android:versionCode="33"
     android:versionName="1.0" >
 
@@ -27,45 +11,54 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <!-- android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" > -->
         <activity
-            android:name="com.android.grafika.MainActivity"
+            android:name=".MainActivity"
+            android:exported="true"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.grafika.ReadPixelsActivity"
+            android:name=".ReadPixelsActivity"
+            android:exported="true"
             android:label="@string/title_activity_read_pixels" >
         </activity>
         <activity
-            android:name="com.android.grafika.PlayMovieActivity"
+            android:name=".PlayMovieActivity"
+            android:exported="true"
             android:label="@string/title_activity_play_movie" >
         </activity>
         <activity
-            android:name="com.android.grafika.LiveCameraActivity"
+            android:name=".LiveCameraActivity"
+            android:exported="true"
             android:label="@string/title_activity_live_camera" >
         </activity>
         <activity
-            android:name="com.android.grafika.CameraCaptureActivity"
+            android:name=".CameraCaptureActivity"
+            android:exported="true"
             android:label="@string/title_activity_camera_capture" >
         </activity>
         <activity
-            android:name="com.android.grafika.TextureViewGLActivity"
+            android:name=".TextureViewGLActivity"
+            android:exported="true"
             android:label="@string/title_activity_texture_view_gl" >
         </activity>
         <activity
-            android:name="com.android.grafika.TextureViewCanvasActivity"
+            android:name=".TextureViewCanvasActivity"
+            android:exported="true"
             android:label="@string/title_activity_texture_view_canvas" >
         </activity>
         <activity
-            android:name="com.android.grafika.RecordFBOActivity"
+            android:name=".RecordFBOActivity"
+            android:exported="true"
             android:label="@string/title_activity_record_fbo"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
 
@@ -77,63 +70,77 @@
             <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
         </activity>
         <activity
-            android:name="com.android.grafika.ChorTestActivity"
+            android:name=".ChorTestActivity"
+            android:exported="true"
             android:label="@string/title_activity_chor_test" >
         </activity>
         <activity
-            android:name="com.android.grafika.DoubleDecodeActivity"
+            android:name=".DoubleDecodeActivity"
+            android:exported="true"
             android:label="@string/title_activity_double_decode" >
         </activity>
         <activity
-            android:name="com.android.grafika.ContinuousCaptureActivity"
+            android:name=".ContinuousCaptureActivity"
+            android:exported="true"
             android:label="@string/title_activity_continuous_capture" >
         </activity>
         <activity
-            android:name="com.android.grafika.SoftInputSurfaceActivity"
+            android:name=".SoftInputSurfaceActivity"
+            android:exported="true"
             android:label="@string/title_activity_soft_input_surface" >
         </activity>
         <activity
-            android:name="com.android.grafika.HardwareScalerActivity"
+            android:name=".HardwareScalerActivity"
+            android:exported="true"
             android:label="@string/title_activity_hardware_scaler"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.android.grafika.GlesInfoActivity"
+            android:name=".GlesInfoActivity"
+            android:exported="true"
             android:label="@string/title_activity_gles_info" >
         </activity>
         <activity
-            android:name="com.android.grafika.PlayMovieSurfaceActivity"
+            android:name=".PlayMovieSurfaceActivity"
+            android:exported="true"
             android:label="@string/title_activity_play_movie_surface" >
         </activity>
         <activity
-            android:name="com.android.grafika.MultiSurfaceActivity"
+            android:name=".MultiSurfaceActivity"
+            android:exported="true"
             android:label="@string/title_activity_multi_surface_test"
             android:theme="@android:style/Theme.Holo" >
         </activity>
         <activity
-            android:name="com.android.grafika.CodecOpenActivity"
+            android:name=".CodecOpenActivity"
+            android:exported="true"
             android:label="@string/title_activity_codec_open" >
         </activity>
         <activity
-            android:name="com.android.grafika.TextureUploadActivity"
+            android:name=".TextureUploadActivity"
+            android:exported="true"
             android:label="@string/title_activity_texture_upload" >
         </activity>
         <activity
-            android:name="com.android.grafika.ColorBarActivity"
+            android:name=".ColorBarActivity"
+            android:exported="true"
             android:label="@string/title_color_bar"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.android.grafika.ScheduledSwapActivity"
+            android:name=".ScheduledSwapActivity"
+            android:exported="true"
             android:label="@string/title_scheduled_swap"
             android:theme="@android:style/Theme.Black" >
         </activity>
         <activity
-            android:name="com.android.grafika.TextureFromCameraActivity"
+            android:name=".TextureFromCameraActivity"
+            android:exported="true"
             android:label="@string/title_texture_from_camera"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity android:name=".ScreenRecordActivity"
+            android:exported="true"
                   android:label="Screen Recording"/>
     </application>
 
